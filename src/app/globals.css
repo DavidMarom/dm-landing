@@ -10,7 +10,14 @@
 
 @font-face {
   font-family: "Inknut";
-  src: url("../../public/fonts/InknutAntiqua-Regular.ttf") format("truetype");
+  src: url("../../public/fonts/InknutAntiqua-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../../public/fonts/Inconsolata-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -30,12 +37,32 @@ body {
 h1 {
   font-family: Inknut;
   color: var(--text);
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: Inknut;
+  color: var(--text);
+  font-size: 1.75rem;
+}
+
+p {
+  font-family: Inconsolata;
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .ra {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.rab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .page-container {
@@ -50,6 +77,15 @@ h1 {
 .page-content {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 1000px;
+  padding-top: 3rem;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-300 {
+  /* max-width: 700px; */
+}
