@@ -9,9 +9,12 @@ const imageStyle = {
 export default function Home() {
   return (
     <div className="page-content">
-      <div className="rab">
+      <div className="strip-01">
 
-        <div className="">
+        <img src="/images/DM3.jpg" alt="David Marom" style={imageStyle} className="toggle-off" />
+
+
+        <div>
 
           <h1>David Marom</h1>
           <h2>Web Developer</h2>
@@ -22,7 +25,7 @@ export default function Home() {
           <p>Sql, Mongo | Mac, Ubuntu, Windows | AWS, Google</p>
         </div>
 
-        <img src="/images/DM3.jpg" alt="David Marom" style={imageStyle} />
+        <img src="/images/DM3.jpg" alt="David Marom" style={imageStyle} className="toggle-on" />
 
       </div>
       <br />

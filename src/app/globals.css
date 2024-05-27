@@ -65,6 +65,20 @@ p {
   justify-content: space-between;
 }
 
+.strip-01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.toggle-on {
+  display: block;
+}
+
+.toggle-off {
+  display: none;
+}
+
 .page-container {
   padding-top: 20px;
   display: flex;
@@ -86,6 +100,23 @@ p {
   flex-direction: column;
 }
 
-.w-300 {
-  /* max-width: 700px; */
+
+
+
+@media (max-width: 768px) {
+  .strip-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* justify-content: space-between; */
+  }
+
+  .toggle-on {
+    display: none;
+  }
+
+  .toggle-off {
+    display: block;
+  }
 }
